@@ -1,1 +1,60 @@
-Simple Shell Task Project This project aims to develop a UNIX command line interpreter, known as a simple shell. The project is divided into several tasks, each building upon the previous one and adding new functionality. Here is a summary of each task: Task 1: Simple shell 0.1 • Write a basic UNIX command line interpreter. • Display a prompt and wait for the user to enter a command. • The prompt is displayed after each command execution. • The commands are simple, single-word commands without arguments. • Print an error message and display the prompt again if the command is not found. • Handle the "end of file" condition (Ctrl+D). Task 2: Simple shell 0.2 • Build upon Task 1 and handle command lines with arguments. Task 3: Simple shell 0.3 • Extend Task 2 by handling the PATH environment variable. • Do not call fork if the command does not exist. Task 4: Simple shell 0.4 • Implement the exit built-in command to exit the shell. • The exit command does not take any arguments. Task 5: Simple shell 1.0 • Expand the shell by adding the env built-in command. • The env command prints the current environment variables. Task 6: Simple shell 0.1.1 (Advanced) • Create a custom getline function to read user input. • Use a buffer to minimize calls to the read system call. • Utilize static variables and avoid using the getline function. Task 7: Simple shell 0.2.1 (Advanced) • Avoid using the strtok function in the implementation. Task 8: Simple shell 0.4.1 (Advanced) • Enhance the exit built-in command to handle an exit status argument. Task 9: setenv, unsetenv (Advanced) • Implement the setenv and unsetenv built-in commands. • setenv initializes or modifies environment variables. • unsetenv removes an environment variable. Task 10: cd (Advanced) • Implement the cd built-in command to change the current directory. • The cd command accepts an optional argument for the directory to change to. • If no argument is provided, the command is interpreted as cd $HOME. • Update the PWD environment variable when changing directories. Task 11: ; (Advanced) • Handle the commands separator ";" to execute multiple commands in sequence. Task 12: && and || (Advanced) • Handle the shell logical operators "&&" and "||" for conditional command execution. Task 13: alias (Advanced) • Implement the alias built-in command to define and display aliases. Task 14: Variables (Advanced) • Handle variable replacement in command execution. • Handle special variables like "$?" and "$$". Task 15: Comments (Advanced) • Handle comments in commands using the "#" symbol. Task 16: File as input (Advanced) • Allow the shell to take a file as a command line argument. • The file contains commands to be executed by the shell. • Each command is on a separate line. • In this mode, the shell does not display a prompt or read from stdin. For each task, there is a corresponding File in simple_shell Github repository where the code can be found and further details can be explored.
+<h1>Simple Shell Project</h1>
+<p>This repository contains the code for a simple UNIX command line interpreter, also known as a shell. The shell is implemented in several versions, each building upon the previous version and adding new functionality.</p>
+
+<h2>Task 0: Betty would be proud</h2>
+<p>Write a beautiful code that passes the Betty checks.</p>
+
+<h2>Task 1: Simple shell 0.1</h2>
+<p>Write a basic UNIX command line interpreter.</p>
+<ul>
+  <li>Display a prompt and wait for the user to type a command.</li>
+  <li>The prompt is displayed again each time a command has been executed.</li>
+  <li>The command lines are simple, consisting of only one word.</li>
+  <li>If an executable cannot be found, print an error message and display the prompt again.</li>
+  <li>Handle errors and the "end of file" condition.</li>
+</ul>
+
+<h2>Task 2: Simple shell 0.2</h2>
+<p>Enhance the shell to handle command lines with arguments.</p>
+
+<h2>Task 3: Simple shell 0.3</h2>
+<p>Further enhance the shell by handling the PATH and not calling fork if the command doesn't exist.</p>
+
+<h2>Task 4: Simple shell 0.4</h2>
+<p>Implement the exit built-in command that exits the shell.</p>
+
+<h2>Task 5: Simple shell 1.0</h2>
+<p>Implement the env built-in command that prints the current environment.</p>
+
+<h2>Task 6: Simple shell 0.1.1 (Advanced)</h2>
+<p>Write your own getline function and optimize the reading process.</p>
+
+<h2>Task 7: Simple shell 0.2.1 (Advanced)</h2>
+<p>Implement the shell without using strtok.</p>
+
+<h2>Task 8: Simple shell 0.4.1 (Advanced)</h2>
+<p>Handle arguments for the built-in exit command.</p>
+
+<h2>Task 9: setenv, unsetenv (Advanced)</h2>
+<p>Implement the setenv and unsetenv built-in commands to manipulate environment variables.</p>
+
+<h2>Task 10: cd (Advanced)</h2>
+<p>Implement the cd built-in command to change the current directory.</p>
+
+<h2>Task 11: ; (Advanced)</h2>
+<p>Handle the commands separator ";" to execute multiple commands.</p>
+
+<h2>Task 12: && and || (Advanced)</h2>
+<p>Handle the shell logical operators "&&" and "||" to execute commands conditionally.</p>
+
+<h2>Task 13: alias (Advanced)</h2>
+<p>Implement the alias built-in command to define and print aliases.</p>
+
+<h2>Task 14: Variables (Advanced)</h2>
+<p>Handle variables replacement, including the special variables "$?" and "$$".</p>
+
+<h2>Task 15: Comments (Advanced)</h2>
+<p>Handle comments in the shell by ignoring lines starting with "#".</p>
+
+<p>Each task builds upon the previous ones, adding new features and functionality to the shell. The goal is to create a fully functional command line interpreter.</p>
+
